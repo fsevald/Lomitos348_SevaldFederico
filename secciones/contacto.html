@@ -5,129 +5,167 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="./img/favicon_348.png" type="image/x-icon">
+    
+    <link rel="shortcut icon" href="../img/favicon_348.png" type="image/x-icon">
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    
     <link rel="stylesheet" href="../estilos/style.css">
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@1&display=swap" rel="stylesheet">
-    <title>Lomitos 348 - Contacto</title>
-</head>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    
+    <title>Lomitos 348 - Productos</title>
+ </head>
 
-<body class="bodyContacto">
+ <body>
+
 
     <header>
-        
+
         <a href="../index.html"><img class="logo" src="../img/Logo348.png" alt="Logo348"></a>
-        
 
     </header>
 
-    <nav>
-        <ul>
-            <li><a href="../index.html">Inicio</a></li>
-            <li><a href="./nosotros.html">Nosotros</a></li>
-            <li><a href="./productos.html">Productos</a></li>
-            <li><a href="./sucursales.html">Sucursales</a></li>
-            <li><a href="">Contacto</a></li>
+
+
+    <nav class="d-flex justify-content-center">
+        <ul class="d-flex justify-content-evenly">
+            <li><a href="../index.html">INICIO</a></li>
+            <li><a href="./nosotros.html">NOSOTROS</a></li>
+            <li><a href="./productos.html">PRODUCTOS</a></li>
+            <li><a href="./sucursales.html">SUCURSALES</a></li>
+            <li><a href="./contacto.html">CONTACTO</a></li>
         </ul>
 
     </nav>
 
 
 
-    <div class="divTexto">
+    <section class="container">
 
-        <h1> Escribinos un mensaje!</h1>
 
-        <p class="pTextIndex">Para enviar consultas, sugerencias o comentarios, podés hacerlo mediante el formulario de
-            contacto. Si no deseas completarlo, también podés enviarnos un email a <span>info@lomitos348.com</span> o comunicarte a los
-            teléfonos de nuestras sucursales.
-        </p>
+        <!-- FILA a la q llame ROW-->
 
-        <p class="pTextIndex">Esperamos tu mensaje!</p>
+        <div class="row mt-4 mb-4">
 
-    </div>
+            <!-- COLUMNAS que seran 2, de 6 c/u -->
 
-    <div class="divFoto">
+            <div class="col-lg-6 col-md-6 col-sm-12 animate__animated animate__slideInLeft">
 
-        <div class="divForms">
-            <form class="formContact">
-
+                <h1>Escribinos un mensaje!</h1>
                 
-                <label for="nombre_apellido">Tu nombre y apellido:</label>
-                <input type="text" name="nombre_apellido" id="01">   
+                <p class="pIndex">Para enviar consultas, sugerencias o comentarios, podés hacerlo mediante el formulario de contacto. 
+                    Si no deseas completarlo, también podés enviarnos un email a <span>info@lomitos348.com</span> 
+                    o comunicarte a los teléfonos de nuestras sucursales.</p>
+                <p class="pIndex">También podes contactarnos vía redes sociales 
+                <a href="https://www.instagram.com/lomitos348ok/?hl=es"><i class="bi bi-instagram icoContacto"></i></a> <a href="https://es-la.facebook.com/Lomitos348/"><i class="bi bi-facebook icoContacto"></i></a></p>
+                <p class="pIndex">Esperamos tu mensaje!</p>
 
-                
+            </div>
 
-                <label for="mail">Tu mail:</label>
-                <input type="email" name="mail" id="02">
-        
-                
 
-                <label for="local">Tu consulta es para algun local en particular?:</label>
-                <select name="local">
-                    <option value="Colon">Casa Central</option>
-                    <option value="VAS">Villa Allende</option>
-                    <option value="NvaCba">Nueva Córdoba</option>
-                    <option value="Maipu">Maipú</option>
-                    <option value="Todas">Indistinto</option>
-                </select>
+            <div class="col-lg-6 col-md-6 col-sd-12 animate__animated animate__slideInRight d-flex flex-column align-items-start">
 
-            
+                <div class="mb-2">
+                    <label for="nombre" class="form-label">Tu nombre</label>
+                    <input type="text" class="form-control" id="nombre" placeholder="tu nombre">
+                  </div>
 
-                <label for="mensaje">Tu consulta o mensaje:</label>
-                <textarea name="mensaje" id="03" cols="30" rows="8"></textarea>
-            
-                <div><input type="checkbox" name="acepta" value="04"/>
-                Acepto términos y condiciones <a class="aEnlace" href="">(ver legales)</a>
+                <div class="mb-2">
+                    <label for="email" class="form-label">Tu email</label>
+                    <input type="email" class="form-control" id="email" placeholder="tumail@gmail.com">
+                  </div>
+                  
+                <div class="mb-2">
+                    <label for="mensaje" class="form-label">Deja tu mensaje:</label>
+                    <textarea class="form-control" id="mensaje" cols="30" rows="3"></textarea>
+                  </div>
+
+                <div class="mb-3 form-check">
+                    <input type="checkbox" class="form-check-input" id="condiciones">
+                    <label class="form-check-label" for="condiciones">Acepto términos y condiciones</label>
                 </div>
-
-            
-
-                <input type="reset" value="Borrar">
-                <input type="submit" value="Enviar">
-            </form>
-            
-
-         </div>
-
-    </div>
+                <button type="submit" class="btn btn-danger">Enviar</button>
 
 
-    <div class="divTitulo">
+            </div>
+
+
+        </div>
+
+
+    </section>
+
+
+    <div class="divisor">
 
         <p class="pDivisor">• <span>•</span> •</p>
 
-        <h3> ¿Querés abrir una franquicia?</h3>
-
-
     </div>
 
-    <div class="divFranqui">
 
-        <p class="pTextFranqui">Nuestro sistema de franquicias "On Demand" ha sido pensado para estudiar las propuestas de
-            los potenciales franquiciados. Al contrario de los demás sistemas existentes en el mercado cordobés en los
-            cuales los franquiciantes proponen un paquete armado a los franquiciados y estos aceptan o no.
-        </p>
+    <div class="divTitulo pt-3 pb-3 animate__animated animate__fadeInDown">
 
-        <p class="pTextFranqui">"On Demand" recepta inquietudes de emprendedores que potencialmente pueden ser nuestros
-            franquiciados, con una idea de invertir en nuestro negocio, con una limitación en cuanto al capital con que
-            cuentan, la experiencia que poseen y la locación que pretenden.
-        </p>
-
-        <p class="pTextFranqui">De esta manera un emprendedor que desee convertirse en franquiciado y que posea cierta
-            experiencia en el rubro, capital y una idea de locación donde instalarse; puede acercarnos su propuesta, la
-            cual será evaluada por el sistema, para luego empezar un camino de negocios en conjunto con un futuro
-            rentable para ambos.
-        </p>
-
-        
-
-
+        <h3>Conocé nuestro sistema de franquicias...</h3>
 
     </div>
 
 
+    <section class="container">
+
+
+        <div class="row mt-4 mb-4">
+
+
+            <div
+                class="col-12 animate__animated animate__fadeInUp d-flex flex-column align-items-center mt-3">
+
+                
+
+                <p class="pFranquiciasL">Nuestro sistema de franquicias "On Demand" ha sido pensado para estudiar las propuestas de
+                    los potenciales franquiciados. Al contrario de los demás sistemas existentes en el mercado cordobés en los
+                    cuales los franquiciantes proponen un paquete armado a los franquiciados y estos aceptan o no.</p>
+
+
+            </div>
+
+
+            <div
+                class="col-12 animate__animated animate__fadeInUp d-flex flex-column align-items-center mt-3">
+
+                
+
+                <p class="pFranquiciasL">"On Demand" recepta inquietudes de emprendedores que potencialmente pueden ser nuestros
+                    franquiciados, con una idea de invertir en nuestro negocio, con una limitación en cuanto al capital con que
+                    cuentan, la experiencia que poseen y la locación que pretenden.</p>
+                
+
+            </div>
+
+
+            <div
+                class="col-12 animate__animated animate__fadeInUp d-flex flex-column align-items-center mt-3">
+
+               
+                <p class="pFranquiciasL">De esta manera un emprendedor que desee convertirse en franquiciado y que posea cierta
+                    experiencia en el rubro, capital y una idea de locación donde instalarse; puede acercarnos su propuesta, la
+                    cual será evaluada por el sistema, para luego empezar un camino de negocios en conjunto con un futuro
+                    rentable para ambos.</p>
+
+
+            </div>
+
+
+        </div>
+
+
+    </section>
 
 
 
@@ -136,25 +174,31 @@
     <footer>
 
         <p><strong>Footer: </strong>Info Legales & Copyright</p>
-        <p><a href="https://www.instagram.com/lomitos348ok/?hl=es">@lomitos348ok</a> • <a
-                href="https://es-la.facebook.com/Lomitos348/">Lomitos348k</a></p>
+        <p><a href="https://www.instagram.com/lomitos348ok/?hl=es"><i class="bi bi-instagram icoFooter"></i> lomitos348ok</a>
+             • 
+             <a href="https://es-la.facebook.com/Lomitos348/"><i class="bi bi-facebook icoFooter"></i> Lomitos348</a></p>
 
+        <ul class="d-flex flex-wrap justify-content-evenly ulFooterJr">
+            <li class="liFooterJr"><a class="aFooterJr" href="../index.html">| Inicio |</a></li>
 
-        <ul class="ulFooter">
-            <li class="liFooter"><a class="aFooter" href="../index.html">Inicio</a></li>
-            <li class="liFooter">•</li>
-            <li class="liFooter"><a class="aFooter" href="./nosotros.html">Nosotros</a></li>
-            <li class="liFooter">•</li>
-            <li class="liFooter"><a class="aFooter" href="./productos.html">Productos</a></li>
-            <li class="liFooter">•</li>
-            <li class="liFooter"><a class="aFooter" href="./sucursales.html">Sucursales</a></li>
-            <li class="liFooter">•</li>
-            <li class="liFooter"><a class="aFooter" href="./contacto.html">Contacto</a></li>
+            <li class="liFooterJr"><a class="aFooterJr" href="./nosotros.html">| Nosotros |</a></li>
+
+            <li class="liFooterJr"><a class="aFooterJr" href="./productos.html">| Productos |</a></li>
+
+            <li class="liFooterJr"><a class="aFooterJr" href="./sucursales.html">| Sucursales |</a></li>
+
+            <li class="liFooterJr"><a class="aFooterJr" href="./contacto.html">| Contacto |</a></li>
         </ul>
 
     </footer>
 
 
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+    </script>
 
 </body>
 
