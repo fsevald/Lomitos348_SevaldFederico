@@ -1,15 +1,14 @@
 *{
-
     padding: 0px;
     margin: 0px;
 }
 
+/* Layout para pantallas MEDIUM y superiores -- Mayores a 768px*/
 
-/* BASES */
+/* BODY BASE */
 
 
 body{
-
     background-image: url("../img/mosaico348.png");
     background-repeat: repeat;
 
@@ -27,30 +26,23 @@ body{
 /* HEADER */
 
 header{
-
-    /*grid-area: banner;*/
-
     background-image: linear-gradient(#ba3a32, #e9483c);
     
     display: flex;
     flex-direction: column;
     align-items: center;
 
-    
-
-    
 }
 
 
 .logo{
-
     width: 250px;
 }
 
 
 h2{
     font-family: 'DM Serif Text', serif;
-    font-size: 24pt;
+    font-size: 2em;
     font-weight: 800;
     color: whitesmoke;
     text-align: center;
@@ -83,7 +75,6 @@ h2{
 
 
 nav{
-
     background-color:#aa2f27;
 
     padding-top: 1rem;
@@ -98,26 +89,23 @@ nav{
 ul{
     list-style-type: none;
     
-
     display: flex;
     flex-direction: row;
     justify-content: space-around;
 
     width: 60%;
 
-    padding-right: 0rem;
-    padding-left: 0rem;
+    padding-right: 0px;
+    padding-left: 0px;
     
 }
 
 
-
 li{
-
     padding: 2px 5px 2px 5px;
 
     text-align: center;
-    font-size: 0.75rem;
+    font-size: 1em;
 
 }
 
@@ -128,33 +116,26 @@ a{
 
 }
 
-
     a:hover{
         color: rgb(253, 187, 45);
         
     }
 
 
-
-
 /*INDEX CENTRAL*/
 
 
 h1{
-
     font-family: 'DM Serif Text', serif;
-    font-size: 30pt;
+    font-size: 2.5em;
     font-weight: 800;
     color:black;
     text-align: right;
-
-
 
 }
 
 
 .imgIndex{
-
     width: 95%;
     border-radius: 15px;
 
@@ -162,16 +143,14 @@ h1{
     
 }
 
-        .imgIndex:hover{
-
-            width: 100%;
-            border-style: solid;
-            border-color:#8f2c25;
-        }
+    .imgIndex:hover{
+        width: 100%;
+        border-style: solid;
+        border-color:#8f2c25;
+    }
 
 
 .pIndex{
-
     width: 100%;
 
     padding-left: 20%;
@@ -186,9 +165,9 @@ h1{
 
 
 .pDivisor{
-
-    font-size: 30px;
+    font-size: 2em;
     text-align: center;
+
 }
 
 span{
@@ -199,15 +178,13 @@ span{
 
 
 .divTitulo{
-
     background-color: rgba(145, 123, 64, 0.151);
 
 }
 
 h3{
-
     font-family: 'DM Serif Text', serif;
-    font-size: 21pt;
+    font-size: 1.75em;
     font-weight: 800;
     color:black;
     text-align: center;
@@ -218,7 +195,6 @@ h3{
 /*ICONOS CIERRE*/
 
 .pInfo{
-
     font-size: larger;
     text-align: center;
 }
@@ -226,42 +202,44 @@ h3{
 
 .ico{
 
-    font-size: 3rem;
+    font-size: 3em;
     color:#ba3a32;
 
     transition: font-size 1s;
+
 }
 
-
-        .ico:hover{
+    .ico:hover{
             
+        font-size: 3.5em;
 
-            font-size: 3.5rem;
-        }
-
+    }
 
 
 
 /* FOOTER */
 
 footer{
-    /*grid-area: pie;*/
 
     background-image: linear-gradient(#BA3A32, #8f2c25);
 
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: azure;
-    
     display: flex;
     flex-direction: column;
     align-items: center;
-    
-    
-    padding-top: 1rem;
-    padding-bottom: 1rem;
+     
+    padding-top: 1em;
+    padding-bottom: 1em;
 
     bottom: 0px;
     margin-top: auto;
+
+}
+
+
+.pFooter{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: azure;
+    font-size: 1em;
 
 }
 
@@ -271,47 +249,40 @@ footer{
     text-decoration: none;
 
 }
-
-
-        .aRedes:hover{
-            color: rgb(253, 187, 45);
+    .aRedes:hover{
+        color: rgb(253, 187, 45);
             
-        }
+    }
 
 
 
 .icoFooter{
-
-    font-size: 1rem;
+    font-size: 1em;
     color:azure;
 
 }
 
+    .icoFooter:hover{
+        color: rgb(253, 187, 45);
+        
+    }
 
-        .icoFooter:hover{
-            color: rgb(253, 187, 45);
-            
-        }
 
-
+/*FOOTER JR*/
 
 .ulFooterJr{
-
     width: 50%;
 }
 
 .liFooterJr{
 
-    color: rgb(54, 17, 7);
-
+color: rgb(54, 17, 7);
     font-size: medium;
-
 
 }
 
 
 .aFooterJr{
-
     color: rgb(54, 17, 7);
 
     text-decoration: none;
@@ -322,16 +293,10 @@ footer{
 }
 
 
-
-
-
-
 /*NOSOTROS*/
 
 
-
 .pNosotrosL{
-
     width: 100%;
 
     padding-left: 20%;
@@ -342,7 +307,6 @@ footer{
 
 
 .pNosotrosR{
-
     width: 100%;
 
     padding-right: 20%;
@@ -353,9 +317,7 @@ footer{
 
 
 .pNosotrosNE{
-
     width: 80%;
-
 
     font-size: larger;
     text-align: left;
@@ -363,9 +325,7 @@ footer{
 
 
 .pNosotrosC{
-
     width: 80%;
-
 
     font-size: larger;
     text-align: center;
@@ -373,7 +333,6 @@ footer{
 
 
 .imgNosotros{
-
     width: 95%;
     border-radius: 15px;
 
@@ -381,22 +340,17 @@ footer{
     
 }
 
-        .imgNosotros:hover{
-
-            width: 100%;
-            border-style: solid;
-            border-color:#8f2c25;
-        }
-
-
+    .imgNosotros:hover{
+        width: 100%;
+        border-style: solid;
+        border-color:#8f2c25;
+    }
 
 
 /*SUCURSALES*/
 
 
-
 .imgSucursal{
-
     width: 40%;
     border-radius: 15px;
 
@@ -404,17 +358,14 @@ footer{
     
 }
 
-        .imgSucursal:hover{
-
-            width: 45%;
-            border-style: solid;
-            border-color:#8f2c25;
-        }
-
+    .imgSucursal:hover{
+        width: 45%;
+        border-style: solid;
+        border-color:#8f2c25;
+    }
 
 
 .imgSucursalMin{
-
     width: 20%;
     border-radius: 15px;
         
@@ -422,19 +373,15 @@ footer{
             
     }
         
-        .imgSucursalMin:hover{
-        
-            width: 22%;
-            border-style: solid;
-            border-color:#8f2c25;
-        }
-
+    .imgSucursalMin:hover{
+        width: 22%;
+        border-style: solid;
+        border-color:#8f2c25;
+    }
 
 
 .pSucursalC{
-
     width: 80%;
-
 
     font-size:x-large;
     text-align: center;
@@ -443,12 +390,9 @@ footer{
 }
 
 
-
 h4{
-
-
     font-family: 'DM Serif Text', serif;
-    font-size: 18pt;
+    font-size: 1.5em;
     font-weight: 800;
     color:#8f2c25;
     text-align: left;
@@ -457,19 +401,14 @@ h4{
 
 
 .card-body{
-
     background-color:#d8d4cb;
 }
-
-
 
 
 /*PRODUCTOS*/
 
 
-
 .imgProducto{
-
     width: 80%;
     border-radius: 15px;
 
@@ -477,114 +416,82 @@ h4{
     
 }
 
-        .imgProducto:hover{
-
-            width: 85%;
-            border-style: solid;
-            border-color:#8f2c25;
-        }
-
-
-
-
+    .imgProducto:hover{
+        width: 85%;
+        border-style: solid;
+        border-color:#8f2c25;
+    }
 
 
 /*CONTACTO*/
 
-.icoContacto{
 
-    font-size: 1rem;
+.icoContacto{
+    font-size: 1em;
     color:black;
 
 }
 
-
-        .icoContacto:hover{
-            color:#BA3A32;
+    .icoContacto:hover{
+        color:#BA3A32;
             
-        }
+    }
 
 
 
 .pFranquiciasL{
-
     width: 80%;
-        
-        
+   
     font-size: larger;
     text-align: left;
 }
 
 
 
-/* BREAK POINT --> Cambios para anchos de pantalla menores a 768px */
+/* BREAK POINT: Dispositivos SMALL--> Cambios para anchos de pantalla menores a 768px */
 
 
 @media only screen and (min-width: 576px) and (max-width: 768px){
 
-    
 
     ul{
         width: 90%;
         
     }
 
-
     h1{
-
-        text-align: center;
-        font-size: 24pt;
+        text-align: left;
+        font-size: 2em;
         
     }
 
-
     .pIndex{
-
-        padding-left: 0%;
-        
+    padding-left: 0%;
         text-align: left;
     }
 
-
-
     .pNosotrosL{
-
         padding-left: 0%;
-        
         text-align: justify;
     }
     
-    
     .pNosotrosR{
-    
         padding-right: 0%;
-        
         text-align: justify;
     }
 
 
     .pNosotrosNE{
-
         width: 100%;
-    
-    
-        
         text-align: justify;
     }
 
 
     .pFranquiciasL{
-
         width: 100%;
-    
-    
-        
         text-align: justify;
     }
     
-    
-    
-
     
 
 }
@@ -594,29 +501,22 @@ h4{
 
 
 
-/* BREAK POINT --> Cambios para anchos de pantalla menores a 576px */
+/* BREAK POINT: Dispositivos XSMALL --> Cambios para anchos de pantalla menores a 576px */
 
 @media only screen and (max-width: 575px){
     
 
-
-
-
     nav{
-
         background-color:#aa2f27;
     
-        padding-top: 0rem;
+        padding-top: 0em;
         padding-left: 0px;
     
-    
     }
-    
     
     ul{
         list-style-type: none;
         
-    
         display: flex;
         flex-direction: column;
     
@@ -629,59 +529,43 @@ h4{
 
 
     .ulFooterJr{
-
         width: 90%;
     }
 
-
-
     h1{
-
         text-align: center;
-        font-size: 24pt;
+        font-size: 2em;
         
     }
 
-
     .pIndex{
-
         padding-left: 0%;
         text-align: left;
     }
 
 
     .pNosotrosL{
-
         padding-left: 0%;
         text-align: justify;
     }
     
     
     .pNosotrosR{
-    
         padding-right: 0%;
         text-align: justify;
     }
 
 
     .pNosotrosNE{
-
         width: 100%;
-    
         text-align: justify;
     }
 
 
     .pFranquiciasL{
-
         width: 100%;
-    
-    
-        
         text-align: justify;
     }
-
-
 
 
 }
