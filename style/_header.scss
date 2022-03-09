@@ -1,0 +1,40 @@
+header{
+    background-image: linear-gradient(#ba3a32, #e9483c);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .logo{
+        width: 250px;
+        transition: width 1s;
+
+        &:hover{
+            width: 260px;
+        
+        }
+    }
+
+    h2{
+        font-family: 'DM Serif Text', serif;
+        font-size: 2em;
+        font-weight: 800;
+        color: whitesmoke;
+        text-align: center;
+        animation-duration: 2.5s;
+        animation-name: aparece;
+        animation-iteration-count: initial;
+
+        @keyframes aparece {
+            0% {
+                opacity: 0;
+            }
+
+            100% {
+                opacity: 1;
+            }
+        }
+    
+    }
+
+}
+

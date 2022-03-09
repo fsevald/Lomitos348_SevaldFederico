@@ -1,0 +1,39 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+$rojo348: #BA3A32;
+
+body{
+    background-image: url("../img/mosaico348.png");
+    background-repeat: repeat;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+
+}
+
+.pDivisor{
+    font-size: 2em;
+    text-align: center;
+
+}
+
+span{
+    color:$rojo348;
+}
+
+
+.divTitulo{
+    background-color: rgba(145, 123, 64, 0.151);
+}
+
+h3{
+    font-family: 'DM Serif Text', serif;
+    font-size: 1.75em;
+    font-weight: 800;
+    color:black;
+    text-align: center;
+}

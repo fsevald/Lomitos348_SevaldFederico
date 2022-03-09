@@ -1,0 +1,37 @@
+nav{
+    background-color:#aa2f27;
+    padding-top: 1rem;
+    padding-left: 0px;
+    display: flex;
+    justify-content: center;
+
+    ul{
+        list-style-type: none;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        width: 60%;
+        padding-right: 0px;
+        padding-left: 0px;
+
+        li{
+            padding: 2px 5px 2px 5px;
+            text-align: center;
+            font-size: 1em;
+
+            a{
+                color: azure;
+                text-decoration: none;
+
+                &:hover{
+                    color: rgb(253, 187, 45);
+                    
+                }
+            
+            }
+        
+        }
+        
+    }
+
+}

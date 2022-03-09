@@ -1,0 +1,279 @@
+@import "variables";
+
+@import "generales";
+@import "header";
+@import "nav";
+@import "iconos";
+@import "footers";
+
+/* Comando para compilar: npm run watch-css*/
+/*INDEX*/
+
+h1{
+    font-family: 'DM Serif Text', serif;
+    font-size: 2.5em;
+    font-weight: 800;
+    color:black;
+    text-align: right;
+}
+
+
+.imgIndex{
+    width: 95%;
+    border-radius: 15px;
+
+    transition: width 1s;
+
+    &:hover{
+        width: 100%;
+        border-style: solid;
+        border-color:#8f2c25;
+    }
+    
+}
+
+
+.pIndex{
+    width: 100%;
+    padding-left: 20%;
+    font-size: larger;
+    text-align: right;
+}
+
+
+/*NOSOTROS*/
+
+
+.pNosotrosL{
+    width: 100%;
+    padding-left: 20%;
+    font-size: larger;
+    text-align: right;
+}
+
+
+.pNosotrosR{
+    width: 100%;
+    padding-right: 20%;
+    font-size: larger;
+    text-align: left;
+}
+
+
+.pNosotrosNE{
+    width: 80%;
+    font-size: larger;
+    text-align: left;
+}
+
+
+.pNosotrosC{
+    width: 80%;
+    font-size: larger;
+    text-align: center;
+}
+
+
+.imgNosotros{
+    width: 95%;
+    border-radius: 15px;
+    transition: width 1s;
+
+    &:hover{
+        width: 100%;
+        border-style: solid;
+        border-color:#8f2c25;
+    }
+    
+}
+
+
+
+/*SUCURSALES*/
+
+
+.imgSucursal{
+    width: 40%;
+    border-radius: 15px;
+    transition: width 1s;
+
+    &:hover{
+        width: 45%;
+        border-style: solid;
+        border-color:#8f2c25;
+    }
+}
+
+
+.imgSucursalMin{
+    width: 20%;
+    border-radius: 15px;   
+    transition: width 1s;
+
+    &:hover{
+        width: 22%;
+        border-style: solid;
+        border-color:#8f2c25;
+    }
+            
+    }
+
+
+.pSucursalC{
+    width: 80%;
+    font-size:x-large;
+    text-align: center;
+    color:$rojo348;
+}
+
+
+h4{
+    font-family: 'DM Serif Text', serif;
+    font-size: 1.5em;
+    font-weight: 800;
+    color:#8f2c25;
+    text-align: left;
+
+}
+
+
+.card-body{
+    background-color:#d8d4cb;
+}
+
+
+.btn-danger{
+
+    background-color:$rojo348;
+    border-style: none;
+}
+
+
+
+/*PRODUCTOS*/
+
+
+.imgProducto{
+    width: 80%;
+    border-radius: 15px;
+
+    transition: width 1s;
+
+    &:hover{
+        width: 85%;
+        border-style: solid;
+        border-color:#8f2c25;
+    }
+    
+}
+
+
+/*CONTACTO*/
+
+.pFranquiciasL{
+    width: 80%;
+    font-size: larger;
+    text-align: left;
+}
+
+
+
+
+/* BREAK POINT: Dispositivos SMALL--> Cambios para anchos de pantalla menores a 768px */
+
+
+@media only screen and (min-width: 576px) and (max-width: 768px){
+
+    ul{
+        width: 90%;  
+    }
+
+    h1{
+        text-align: left;
+        font-size: 2em;
+    }
+
+    .pIndex{
+    padding-left: 0%;
+        text-align: left;
+    }
+
+    .pNosotrosL{
+        padding-left: 0%;
+        text-align: justify;
+    }
+    
+    .pNosotrosR{
+        padding-right: 0%;
+        text-align: justify;
+    }
+
+    .pNosotrosNE{
+        width: 100%;
+        text-align: justify;
+    }
+
+    .pFranquiciasL{
+        width: 100%;
+        text-align: justify;
+    }
+
+}
+
+/* BREAK POINT: Dispositivos XSMALL --> Cambios para anchos de pantalla menores a 576px */
+
+@media only screen and (max-width: 575px){
+    
+    nav{
+        background-color:#aa2f27;
+        padding-top: 0em;
+        padding-left: 0px;
+
+        ul{
+            list-style-type: none;
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            margin-bottom: 5px;
+            margin-top: 5px;
+            
+        }
+    
+    }
+
+    .ulFooterJr{
+        width: 90%;
+    }
+
+    h1{
+        text-align: center;
+        font-size: 2em; 
+    }
+
+    .pIndex{
+        padding-left: 0%;
+        text-align: left;
+    }
+
+    .pNosotrosL{
+        padding-left: 0%;
+        text-align: justify;
+    }
+    
+    .pNosotrosR{
+        padding-right: 0%;
+        text-align: justify;
+    }
+
+    .pNosotrosNE{
+        width: 100%;
+        text-align: justify;
+    }
+
+    .pFranquiciasL{
+        width: 100%;
+        text-align: justify;
+    }
+
+
+}
