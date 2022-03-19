@@ -1,0 +1,590 @@
+/*SCSS OK*/
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+/* Layout para pantallas MEDIUM y superiores -- Mayores a 768px*/
+
+/* BODY BASE */
+
+/*
+/*SCSS OK*/
+body{
+    background-image: url("../img/mosaico348.png");
+    background-repeat: repeat;
+
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+
+}
+
+
+
+/* HEADER */
+/*SCSS OK*/
+header{
+    background-image: linear-gradient(#ba3a32, #e9483c);
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+/*SCSS OK*/
+.logo{
+    width: 250px;
+    transition: width 1s;
+}
+/*SCSS OK*/
+    .logo:hover{
+        width: 260px;
+    
+    }
+
+/*SCSS OK*/
+h2{
+    font-family: 'DM Serif Text', serif;
+    font-size: 2em;
+    font-weight: 800;
+    color: whitesmoke;
+    text-align: center;
+
+    animation-duration: 2.5s;
+    animation-name: aparece;
+    animation-iteration-count: initial;
+
+}
+
+        /* ANIMACIÓN h2*/
+/*SCSS OK*/
+        @keyframes aparece {
+            0% {
+                opacity: 0;
+            }
+
+            100% {
+                opacity: 1;
+            }
+        }
+
+        /* fin ANIMACIÓN */
+
+
+
+
+/* NAV */
+
+
+/*SCSS OK*/
+nav{
+    background-color:#aa2f27;
+
+    padding-top: 1rem;
+    padding-left: 0px;
+
+    display: flex;
+    justify-content: center;
+
+}
+
+/*SCSS OK*/
+ul{
+    list-style-type: none;
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+    width: 60%;
+
+    padding-right: 0px;
+    padding-left: 0px;
+    
+}
+
+/*SCSS OK*/
+li{
+    padding: 2px 5px 2px 5px;
+
+    text-align: center;
+    font-size: 1em;
+
+}
+
+/*SCSS OK*/
+a{
+    color: azure;
+    text-decoration: none;
+
+}
+/*SCSS OK*/
+    a:hover{
+        color: rgb(253, 187, 45);
+        
+    }
+
+
+/*INDEX CENTRAL*/
+
+/*SCSS COPIADO OK*/
+h1{
+    font-family: 'DM Serif Text', serif;
+    font-size: 2.5em;
+    font-weight: 800;
+    color:black;
+    text-align: right;
+
+}
+
+/*SCSS COPIADO OK*/
+.imgIndex{
+    width: 95%;
+    border-radius: 15px;
+
+    transition: width 1s;
+    
+}
+/*SCSS COPIADO OK*/
+    .imgIndex:hover{
+        width: 100%;
+        border-style: solid;
+        border-color:#8f2c25;
+    }
+
+/*SCSS COPIADO OK*/
+.pIndex{
+    width: 100%;
+
+    padding-left: 20%;
+
+    font-size: larger;
+    text-align: right;
+}
+
+
+
+/*DIVISOR*/
+
+/*SCSS OK*/
+.pDivisor{
+    font-size: 2em;
+    text-align: center;
+
+}
+/*SCSS OK*/
+span{
+    color: #BA3A32;
+}
+
+/*TITULO*/
+
+/*SCSS OK*/
+.divTitulo{
+    background-color: rgba(145, 123, 64, 0.151);
+
+}
+/*SCSS OK*/
+h3{
+    font-family: 'DM Serif Text', serif;
+    font-size: 1.75em;
+    font-weight: 800;
+    color:black;
+    text-align: center;
+
+}
+
+
+/*ICONOS CIERRE*/
+/*SCSS COPIADO OK*/
+.pInfo{
+    font-size: larger;
+    text-align: center;
+
+    margin-bottom: 2px;
+}
+
+/*SCSS OK*/
+.ico{
+
+    font-size: 3em;
+    color:#ba3a32;
+
+    transition: font-size 1s;
+
+}
+/*SCSS OK*/
+    .ico:hover{
+            
+        font-size: 3.5em;
+
+    }
+
+
+
+/* FOOTER */
+/*SCSS OK*/
+footer{
+
+    background-image: linear-gradient(#BA3A32, #8f2c25);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+     
+    padding-top: 1em;
+    padding-bottom: 1em;
+
+    bottom: 0px;
+    margin-top: auto;
+
+}
+
+/*SCSS OK*/
+.pFooter{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: azure;
+    font-size: 1em;
+
+}
+
+/*SCSS OK*/
+.aRedes{
+    color: azure;
+    text-decoration: none;
+
+}
+/*SCSS OK*/
+    .aRedes:hover{
+        color: rgb(253, 187, 45);
+            
+    }
+
+
+/*SCSS OK*/
+.icoFooter{
+    font-size: 1em;
+    color:azure;
+
+}
+/*SCSS COPIADO OK*/
+    .icoFooter:hover{
+        color: rgb(253, 187, 45);
+        
+    }
+
+
+/*FOOTER JR*/
+/*SCSS OK*/
+.ulFooterJr{
+    width: 50%;
+}
+/*SCSS OK*/
+.liFooterJr{
+
+color: rgb(54, 17, 7);
+    font-size: medium;
+
+}
+
+/*SCSS OK*/
+.aFooterJr{
+    color: rgb(54, 17, 7);
+
+    text-decoration: none;
+    text-transform: uppercase;
+
+    font-size: small;
+
+}
+
+
+/*NOSOTROS*/
+
+/*SCSS COPIADO OK*/
+.pNosotrosL{
+    width: 100%;
+
+    padding-left: 20%;
+
+    font-size: larger;
+    text-align: right;
+}
+
+/*SCSS COPIADO OK*/
+.pNosotrosR{
+    width: 100%;
+
+    padding-right: 20%;
+
+    font-size: larger;
+    text-align: left;
+}
+
+/*SCSS COPIADO OK*/
+.pNosotrosNE{
+    width: 80%;
+
+    font-size: larger;
+    text-align: left;
+}
+
+/*SCSS COPIADO OK*/
+.pNosotrosC{
+    width: 80%;
+
+    font-size: larger;
+    text-align: center;
+}
+
+/*SCSS COPIADO OK*/
+.imgNosotros{
+    width: 95%;
+    border-radius: 15px;
+
+    transition: width 1s;
+    
+}
+/*SCSS COPIADO OK*/
+    .imgNosotros:hover{
+        width: 100%;
+        border-style: solid;
+        border-color:#8f2c25;
+    }
+
+
+/*SUCURSALES*/
+
+/*SCSS COPIADO OK*/
+.imgSucursal{
+    width: 40%;
+    border-radius: 15px;
+
+    transition: width 1s;
+    
+}
+/*SCSS COPIADO OK*/
+    .imgSucursal:hover{
+        width: 45%;
+        border-style: solid;
+        border-color:#8f2c25;
+    }
+
+/*SCSS COPIADO OK*/
+.imgSucursalMin{
+    width: 20%;
+    border-radius: 15px;
+        
+    transition: width 1s;
+            
+    }
+/*SCSS COPIADO OK*/        
+    .imgSucursalMin:hover{
+        width: 22%;
+        border-style: solid;
+        border-color:#8f2c25;
+    }
+
+/*SCSS COPIADO OK*/
+.pSucursalC{
+    width: 80%;
+
+    font-size:x-large;
+    text-align: center;
+
+    color: #BA3A32;
+}
+
+/*SCSS COPIADO OK*/
+h4{
+    font-family: 'DM Serif Text', serif;
+    font-size: 1.5em;
+    font-weight: 800;
+    color:#8f2c25;
+    text-align: left;
+
+}
+
+/*SCSS COPIADO OK*/
+.card-body{
+    background-color:#d8d4cb;
+    
+}
+
+/*SCSS COPIADO OK*/
+.btn-danger{
+
+    background-color:#BA3A32;
+    border-style: none;
+}
+
+
+/*PRODUCTOS*/
+
+/*SCSS COPIADO OK*/
+.imgProducto{
+    width: 80%;
+    border-radius: 15px;
+
+    transition: width 1s;
+    
+}
+/*SCSS COPIADO OK*/
+    .imgProducto:hover{
+        width: 85%;
+        border-style: solid;
+        border-color:#8f2c25;
+    }
+
+
+/*CONTACTO*/
+
+/*SCSS OK*/
+.icoContacto{
+    font-size: 1em;
+    color:black;
+
+}
+/*SCSS OK*/
+    .icoContacto:hover{
+        color:#BA3A32;
+            
+    }
+
+
+/*SCSS COPIADO OK*/
+.pFranquiciasL{
+    width: 80%;
+   
+    font-size: larger;
+    text-align: left;
+}
+
+
+
+/* BREAK POINT: Dispositivos SMALL--> Cambios para anchos de pantalla menores a 768px */
+
+
+@media only screen and (min-width: 576px) and (max-width: 768px){
+
+
+    ul{
+        width: 90%;
+        
+    }
+
+    h1{
+        text-align: left;
+        font-size: 2em;
+        
+    }
+
+    .pIndex{
+    padding-left: 0%;
+        text-align: left;
+    }
+
+    .pNosotrosL{
+        padding-left: 0%;
+        text-align: justify;
+    }
+    
+    .pNosotrosR{
+        padding-right: 0%;
+        text-align: justify;
+    }
+
+
+    .pNosotrosNE{
+        width: 100%;
+        text-align: justify;
+    }
+
+
+    .pFranquiciasL{
+        width: 100%;
+        text-align: justify;
+    }
+    
+    
+
+}
+
+
+
+
+
+
+/* BREAK POINT: Dispositivos XSMALL --> Cambios para anchos de pantalla menores a 576px */
+
+@media only screen and (max-width: 575px){
+    
+
+    nav{
+        background-color:#aa2f27;
+    
+        padding-top: 0em;
+        padding-left: 0px;
+    
+    }
+    
+    ul{
+        list-style-type: none;
+        
+        display: flex;
+        flex-direction: column;
+    
+        width: 100%;
+
+        margin-bottom: 5px;
+        margin-top: 5px;
+        
+    }
+
+
+    .ulFooterJr{
+        width: 90%;
+    }
+
+    h1{
+        text-align: center;
+        font-size: 2em;
+        
+    }
+
+    .pIndex{
+        padding-left: 0%;
+        text-align: left;
+    }
+
+
+    .pNosotrosL{
+        padding-left: 0%;
+        text-align: justify;
+    }
+    
+    
+    .pNosotrosR{
+        padding-right: 0%;
+        text-align: justify;
+    }
+
+
+    .pNosotrosNE{
+        width: 100%;
+        text-align: justify;
+    }
+
+
+    .pFranquiciasL{
+        width: 100%;
+        text-align: justify;
+    }
+
+
+}

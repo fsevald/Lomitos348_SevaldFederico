@@ -277,3 +277,120 @@ h4{
 
 
 }
+
+
+
+/*MAPAS*/
+
+$contactos:(
+    facebook: #3a5795,
+    instagram: #E1306C,
+    whatsapp: #25D366,
+);
+
+@each $app, $color in $contactos{
+    .btn--#{$app}{
+        background-color: $color;
+        font-size: 0.75em;
+        color: white;
+        padding: 0.5em 0.5em 0.5em 0.5em;
+        border-style: none;
+        border-radius: 5px;
+    }
+    
+};
+
+/*MAP-GET*/
+
+$estilo: (
+    fondo: rgba(143, 143, 136, 0.226),
+    alineado: center,
+    tamFuente: 1em,
+    pad: 0.5em,
+
+);
+
+.TitExtra{
+
+    background-color: map-get($estilo, fondo);
+    text-align: map-get($estilo, alineado);
+    font-size: map-get($estilo, tamFuente);
+    padding: map-get($estilo, pad);
+
+}
+
+/*EXTEND*/
+
+
+.frase{
+    background-color: #aa302742;
+    color:#8f2c25;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.5em;
+    align-self: center;
+}
+
+.frase--2{
+    @extend .frase;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.75em;
+
+}
+
+.frase--3{
+    @extend .frase;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border-radius: 5px;
+    
+}
+
+.frase--4{
+    @extend .frase--3;
+    border: 3px solid goldenrod;
+    font-style: oblique;
+
+}
+
+
+/*MIXIN*/
+
+@mixin dimensiones ($width, $height){
+    height: $height;
+    width: $width;
+}
+
+@mixin colores ($colorF, $colorL){
+    background-color: $colorF;
+    color: $colorL;
+    
+}
+
+
+.mixin348{
+    @include dimensiones (120px, 30px);
+    @include colores (#8f2c25, #d8d4cb);
+    font-family: 'DM Serif Text', serif;
+    text-align: center;
+    border-radius: 5px;
+    
+
+}
+
+.mixinFranquicia{
+    @include dimensiones (200px, 30px);
+    @include colores (#aa2f27, #ffffff); 
+    font-family: 'DM Serif Text', serif;
+    text-align: center;
+    border-radius: 5px;
+
+}
+
+.mixinLegales{
+    @include dimensiones (100px, 30px);
+    @include colores (#b33f36, #dacc4f);
+    font-family: 'DM Serif Text', serif;
+    text-align: center;
+    border-radius: 5px;
+    
+
+}
