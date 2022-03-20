@@ -18,6 +18,15 @@ h1{
 }
 
 
+h2{
+    font-family: 'DM Serif Text', serif;
+    font-size: 2em;
+    font-weight: 600;
+    color:#520000;
+    text-align: right;
+}
+
+
 .imgIndex{
     width: 95%;
     border-radius: 15px;
@@ -189,8 +198,13 @@ h4{
     }
 
     h1{
-        text-align: left;
+        text-align: center;
         font-size: 2em;
+    }
+
+    h2{
+        text-align: center;
+        font-size: 1.5em;
     }
 
     .pIndex{
@@ -250,6 +264,11 @@ h4{
         font-size: 2em; 
     }
 
+    h2{
+        text-align: center;
+        font-size: 1.5em; 
+    }
+
     .pIndex{
         padding-left: 0%;
         text-align: left;
@@ -280,7 +299,7 @@ h4{
 
 
 
-/*MAPAS*/
+/*MAPAS (Dejo código pero en el sitio para PreEntrega no se le dió utilidad hasta el momento)*/
 
 $contactos:(
     facebook: #3a5795,
@@ -300,7 +319,7 @@ $contactos:(
     
 };
 
-/*MAP-GET*/
+/*MAP-GET (Dejo código pero en el sitio para PreEntrega no se le dió utilidad hasta el momento)*/
 
 $estilo: (
     fondo: rgba(143, 143, 136, 0.226),
@@ -319,7 +338,7 @@ $estilo: (
 
 }
 
-/*EXTEND*/
+/*EXTEND (Dejo código pero en el sitio para PreEntrega no se le dió utilidad hasta el momento)*/
 
 
 .frase{
@@ -352,7 +371,7 @@ $estilo: (
 }
 
 
-/*MIXIN*/
+/*MIXIN (Dejo código pero en el sitio para PreEntrega no se le dió utilidad hasta el momento)*/
 
 @mixin dimensiones ($width, $height){
     height: $height;

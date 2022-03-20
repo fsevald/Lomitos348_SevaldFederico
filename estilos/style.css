@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   padding: 0px;
   margin: 0px; }
@@ -37,10 +38,10 @@ header {
     transition: width 1s; }
     header .logo:hover {
       width: 260px; }
-  header h2 {
+  header h3 {
     font-family: 'DM Serif Text', serif;
-    font-size: 2em;
-    font-weight: 800;
+    font-size: 1.5em;
+    font-weight: 600;
     color: whitesmoke;
     text-align: center;
     animation-duration: 2.5s;
@@ -138,6 +139,13 @@ h1 {
   font-size: 2.5em;
   font-weight: 800;
   color: black;
+  text-align: right; }
+
+h2 {
+  font-family: 'DM Serif Text', serif;
+  font-size: 2em;
+  font-weight: 600;
+  color: #520000;
   text-align: right; }
 
 .imgIndex {
@@ -247,8 +255,11 @@ h4 {
   ul {
     width: 90%; }
   h1 {
-    text-align: left;
+    text-align: center;
     font-size: 2em; }
+  h2 {
+    text-align: center;
+    font-size: 1.5em; }
   .pIndex {
     padding-left: 0%;
     text-align: left; }
@@ -283,6 +294,9 @@ h4 {
   h1 {
     text-align: center;
     font-size: 2em; }
+  h2 {
+    text-align: center;
+    font-size: 1.5em; }
   .pIndex {
     padding-left: 0%;
     text-align: left; }
@@ -299,7 +313,7 @@ h4 {
     width: 100%;
     text-align: justify; } }
 
-/*MAPAS*/
+/*MAPAS (Dejo código pero en el sitio para PreEntrega no se le dió utilidad hasta el momento)*/
 .btn--facebook {
   background-color: #3a5795;
   font-size: 0.75em;
@@ -324,14 +338,14 @@ h4 {
   border-style: none;
   border-radius: 5px; }
 
-/*MAP-GET*/
+/*MAP-GET (Dejo código pero en el sitio para PreEntrega no se le dió utilidad hasta el momento)*/
 .TitExtra {
   background-color: rgba(143, 143, 136, 0.226);
   text-align: center;
   font-size: 1em;
   padding: 0.5em; }
 
-/*EXTEND*/
+/*EXTEND (Dejo código pero en el sitio para PreEntrega no se le dió utilidad hasta el momento)*/
 .frase, .frase--2, .frase--3, .frase--4 {
   background-color: #aa302742;
   color: #8f2c25;
@@ -351,7 +365,7 @@ h4 {
   border: 3px solid goldenrod;
   font-style: oblique; }
 
-/*MIXIN*/
+/*MIXIN (Dejo código pero en el sitio para PreEntrega no se le dió utilidad hasta el momento)*/
 .mixin348 {
   height: 30px;
   width: 120px;
